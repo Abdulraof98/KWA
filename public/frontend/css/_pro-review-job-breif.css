@@ -1,0 +1,88 @@
+.pro-review-job .input-field-col p{
+	color:#000;
+	font-family: 'Inter', sans-serif;
+	font-size:23px;
+	font-weight:500;
+	padding-left:23px;
+}
+.pro-review-job .input-field-col > span{
+	display:inline-block;
+	margin-bottom:15px;
+}
+.pro-review-job .input-field-col p span{
+    color: #a3a4a6;
+
+}
+.pro-review-job .input-field-col p{
+	margin-bottom:0;
+	padding-right: 10px;
+}
+.pro-review-job-brf{
+	padding-bottom:67px;
+}
+.
+.Print-button a {
+    color: #bcbcbc;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.Print-button-job-brief a{
+	display: inline-block;
+	text-decoration: none;
+	color: #bcbcbc;
+	font-weight: 600;
+}
+.Print-button {
+    text-align: center;
+    padding-top: 16px;
+}
+.Print-button a:hover {
+    color: #fa5252;
+}
+.scope-block .input-field-col {
+    margin-bottom: 7px;
+}
+
+@media(max-width:1199px){
+	.pro-review-job .input-field-col p{
+		font-size:21px;
+	}
+
+}
+@media(max-width:991px){
+	.pro-review-job .input-field-col > span {
+	    margin-bottom: 12px;
+	}
+	.pro-review-job-brf .create-a-job-form .form-block{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+@media(max-width:767px){
+	.pro-review-job .input-field-col p {
+	    font-size: 18px;
+	}
+	.pro-review-job .input-field-col > span {
+	    margin-bottom: 6px;
+	}
+	.pro-review-job-brf .create-a-job-form .form-block{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media(max-width:639px){
+	.pro-review-job-brf .myaccount-menu{
+		display: none;
+	}
+}
+@media(max-width: 575px){
+	.pro-review-job-brf .pro-review-job .input-field-col p{
+		font-size: 17px;
+	}
+}
+@media(max-width:479px){
+	.pro-review-job .input-field-col p{
+		padding-left:10px;
+	}
+}

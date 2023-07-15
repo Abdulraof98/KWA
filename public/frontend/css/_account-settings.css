@@ -1,0 +1,156 @@
+.myaccount-profile {
+    display: flex;
+    align-items: center;
+}
+.myaccount-profile-image {
+    max-width: 124px;
+    height: 122px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffd8d8;
+    border-radius: 100%;
+    position:relative;
+}
+.account-profile-right {
+    width: 46.52%;
+}
+.myaccount-setting-form .account-profile-right{
+    padding-left: 40px;
+}
+.account-profile-lft {
+    width: 53.48%;
+}
+.account-profile-lft .input-field-col.margin-botton-0{
+    margin-bottom:0;
+}
+.add-profile-img {
+    position: absolute;
+    width: 48px;
+    height: 46px;
+    background: #c6c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    right: -14px;
+    top: -9px;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.myaccount-profile-image img{
+    display: inline-block;
+    max-width: 119px;
+    height: 118px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.add-profile-img:hover{
+    background: #a9a8a8;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.add-profile-img input {
+    opacity: 0;
+}
+.add-profile-img label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    border-radius: 100%;
+    z-index: 11;
+    cursor: pointer;
+}
+.add-profile-img label span i {
+    font-size: 22px;
+    color: #000;
+}
+.add-profile-img label span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myaccount-profile{
+    margin-bottom: 15px;
+}
+.my-account-setting-sec .myaccount-content-cntlr{
+    padding-bottom:60px;
+}
+@media(max-width:1199px){
+    .myaccount-profile-image{
+        max-width:117px;
+        height:115px;
+
+    }
+    .add-profile-img{
+        width:44px;
+        height:42px;
+        top:-6px;
+    }
+    .add-profile-img label span i{
+        font-size:20px;
+    }
+}
+@media(max-width:991px){
+    .my-account-setting-sec .myaccount-content-cntlr{
+        padding-bottom:50px;
+    }
+}
+@media(max-width:767px){
+    .myaccount-profile-image{
+        max-width: 102px;
+        height: 100px;
+        padding: 20px;
+    }
+    .add-profile-img {
+        width: 40px;
+        height: 38px;
+        right: -12px;
+    }
+    .myaccount-setting-form .account-profile-right {
+        padding-left: 15px;
+    }
+    .my-account-setting-sec .myaccount-content-cntlr{
+        padding-bottom:40px;
+    }
+}
+@media(max-width:479px){
+    .my-account-setting-sec .myaccount-content-cntlr{
+        padding-top:35px;
+    }
+    .my-account-setting-sec .myaccount-content-cntlr .form-title{
+        text-align:center;
+    }
+    .my-account-setting-sec .myaccount-content-cntlr .input-field-subtitle-center{
+        width:100%;
+    }
+    .myaccount-setting-form .account-profile-right{
+        padding-left:0;
+        margin-bottom:30px;
+    }
+    .myaccount-setting-form .account-profile-right .myaccount-profile-image{
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+@media(max-width:369px){
+    .myaccount-setting-form .account-profile-right {
+        padding-left: 0px;
+    }
+    .submint-btn button{
+        min-width: 100%!important;
+    }
+}

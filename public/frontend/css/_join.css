@@ -1,0 +1,364 @@
+.join-contant-cntlr {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 150px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    border-bottom: 18px solid #7a92d0;
+    box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 27%);
+    -ms-box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 27%);
+    -webkit-box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 27%);
+}
+.join-contant-title{
+	text-align: center;
+	margin-bottom: 24px;
+	font-weight: 600;
+}
+.input-fields-cntlr {
+    padding-bottom: 45px;
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 42px;
+}
+.join-btm-contant {
+    text-align: center;
+}
+.join-have-a-accnt-mgs span{
+	font-weight: 500;
+	color: #76787c;
+	display: inline-block;
+	padding-bottom: 14px;
+}
+.join-btm-btn-cntlr a{
+	min-width: 403px;
+	padding: 15.5px 13px 16.5px;
+}
+.join-contant-sec {
+    padding-top: 35px;
+    padding-bottom: 125px;
+}
+.input-field-row {
+    display: flex;
+    flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.input-field-col {
+	position: relative;
+	margin-bottom: 15px;
+	padding: 0 15px;
+	width: 100%;
+}
+.input-field-col.d2{
+	width: 50%;
+}
+.input-field-col span.in-icon{
+	/*position: absolute;	
+	top: 38%;	
+	left: 31px;
+	color: #2b2b2b;
+	font-size: 20px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);*/
+	color: #2b2b2b;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+	position: absolute;
+    margin: 19px 0px 0px 15px;
+}
+.input-field-col textarea,
+.input-field-col input{
+	width: 100%;
+    max-width: 100%;
+    min-height: 58px;
+    background: #fff;
+    border: 2px solid #cecece;
+    box-sizing: border-box;
+    padding: 15px 20px 15px 44px;
+    padding-right: 20px;
+    color: #2b2b2b;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 6px!important;
+    line-height: 1;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.input-field-col textarea{
+	min-height: 189px!important;
+	resize: none;
+    line-height: 24px;
+}
+.input-field-col textarea:focus,
+.input-field-col input:focus{
+	border-color: #2b2b2b;
+}
+.input-field-col input::placeholder,
+.input-field-col textarea::placeholder{
+    color: #2b2b2b!important;
+    opacity:1;
+    font-weight: 500;
+}
+.input-field-col input::-webkit-input-placeholder,
+.input-field-col textarea::-webkit-input-placeholder{
+    color: #2b2b2b!important;
+    opacity:1;
+    font-weight: 500;
+}
+.input-field-col input::-moz-placeholder,
+.input-field-col textarea::-moz-placeholder{
+    color: #2b2b2b!important;
+    opacity:1;
+    font-weight: 500;
+}
+.input-field-col input:-ms-input-placeholder,
+.input-field-col textarea:-ms-input-placeholder{ 
+    color: #2b2b2b!important;
+    opacity:1;
+    font-weight: 500;
+}
+.input-field-col input:-moz-placeholder,
+.input-field-col textarea:-moz-placeholder{
+    color: #2b2b2b!important;
+    opacity:1;
+    font-weight: 500;
+}
+.submint-btn button{
+	display: inline-block;
+	vertical-align: baseline;
+	min-width: 242px;
+	color: #FFFFFF!important;
+	background: #fa5252!important;
+	font-size: 20px!important;
+	font-weight: 600;
+	line-height: 1.1!important;
+	text-align: center;
+	padding: 16.5px 13px 17.5px;
+	border: 2px solid #fa5252!important;
+	border-radius: 6px!important;
+	text-decoration: none;
+	transition: all 0.5s!important;
+    -ms-transition: all 0.5s!important;
+    -webkit-transition: all 0.5s!important;
+    cursor: pointer!important;
+    margin: 0 10.5px;
+    margin-bottom: 10px;
+}
+.join-form .submint-btn {
+    margin: 0 -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submint-btn .sub-blue-btn{
+	background: #7a92d0!important;
+	border: 2px solid #7a92d0!important;
+	color: #FFFFFF!important;
+}
+.submint-btn button:hover{
+	color: #fa5252!important;
+	background: transparent!important;
+}
+.submint-btn .sub-blue-btn:hover{
+	color: #7a92d0!important;
+	background: transparent!important;
+}
+.input-field-col textarea.textbox{
+    min-height: 58px!important;
+}
+@media(max-width:1199px){
+    .input-field-col textarea, 
+    .input-field-col input{
+        font-size:18px;
+        padding: 15px 20px 15px 40px;
+        min-height:55px
+    }
+    .input-field-col span.in-icon{
+        font-size:18px;
+    }
+    .input-field-col textarea{
+        min-height:169px!important;
+        line-height: 23px;
+    }
+    .input-field-col textarea.textbox{
+        min-height: 55px!important;
+    }
+    .submint-btn button{
+        padding: 16px 13px 15px;
+        font-size:18px!important;
+    }
+    .join-contant-sec {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width: 991px){
+    .join-contant-cntlr {
+        padding: 0 70px;
+        padding-top: 40px;
+        padding-bottom: 60px;;
+    }
+    .input-fields-cntlr {
+        padding-bottom: 60px;
+        margin-bottom: 35px;
+    }
+    .join-contant-sec {
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width:767px){
+    .input-field-col textarea{
+        min-height:150px!important;
+    }
+    .input-field-col textarea, 
+    .input-field-col input{
+        font-size:16px;
+        margin-top:-1px;
+        padding: 15px 15px 15px 35px;
+        min-height: 50px;
+    }
+    .input-field-col textarea.textbox{
+        min-height: 50px!important;
+    }
+    .input-field-col span.in-icon {
+        font-size: 16px;
+        left:28px;
+        margin-top: -1px;
+    }
+    .submint-btn button {
+        padding: 15px 10px 13.5px;
+        font-size: 16px!important;
+        margin-left:5px;
+        margin-right:5px;
+    }
+    .join-contant-sec {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .join-contant-cntlr {
+        padding: 0px 50px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .join-form .submint-btn button{
+        min-width: 50%;
+        margin: 0 15px;
+    }
+    .join-form .submint-btn {
+        margin: 0 15px;
+    }
+    .input-fields-cntlr {
+        padding-bottom: 50px;
+        margin-bottom: 30px;
+    }
+    .join-btm-contant{
+        max-width: 518px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .join-contant-title{
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 575px){
+    .input-field-col {
+        margin-bottom: 20px;
+    }
+    .join-form .submint-btn button {
+        margin: 0 7px;
+    }
+    .join-form .submint-btn {
+        margin: 0 7px;
+    }
+    .join-btm-btn-cntlr a{
+        min-width: 339px;
+    }
+    .join-contant-cntlr {
+        padding: 0px 20px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .input-fields-cntlr {
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    .join-contant-sec {
+        padding-bottom: 50px;
+    }
+    .input-field-col.d2{
+        width: 100%;
+    }
+}
+@media (max-width: 479px){
+    .account-profile-right {
+        width: 100%;
+        margin-bottom:15px;
+    }
+
+    .myaccount-profile {
+        flex-wrap: wrap;
+    }
+
+    .account-profile-lft {
+        width: 100%;
+    }
+    .my-proaccount-setting-form .account-profile-right {
+        padding-left: 0px;
+    }
+    .join-btm-btn-cntlr a {
+        min-width: 100%;
+        padding: 13.5px 13px 14.5px;
+    }
+    .join-form .submint-btn button {
+        margin-bottom: 15px;
+        min-width: 100%;
+    }
+    .join-form .submint-btn {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .join-contant-cntlr {
+        padding: 0px 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .input-fields-cntlr {
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+    }
+    .input-field-col textarea, 
+    .input-field-col input{
+        font-size: 16px;
+    }
+    .input-field-col textarea{
+        line-height: 22px;
+    }
+}
+@media(max-width:400px){
+    .submint-btn button {
+        padding: 12.5px 10px 12.5px;
+    }
+}
+@media(max-width:359px){
+    .input-field-col textarea, .input-field-col input{
+        padding: 15px 15px 15px 32px;
+    }
+    .input-field-col span.in-icon{
+        left:26px;
+    }
+    .join-contant-cntlr {
+        padding: 0px 15px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .input-fields-cntlr {
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+    }
+}

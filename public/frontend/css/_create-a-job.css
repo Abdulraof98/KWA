@@ -1,0 +1,406 @@
+.create-a-job-form .input-field-col label,
+.pro-review-job .input-field-col > span{
+    color: #fa5252;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 11px;
+    position: relative;
+    padding-right: 34px;
+}
+.create-a-job-form .input-field-col input,
+.create-a-job-form .input-field-col textarea{
+	padding: 15px 20px 15px 16px;
+}
+.create-a-job-form .input-field-col textarea {
+    padding-right: 30px;
+}
+.input-field-col textarea{
+	display: block;
+}
+.upload-file {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius:6px;
+}
+.input-field-col-inner{
+	position: relative;
+}
+.upload-file input{
+    width: 43px!important;
+    height: 40px!important;
+}
+.upload-file label:hover span i{
+    color: #fa5252;
+}
+.upload-file label span{
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    position: absolute;
+    top:50%;
+}
+.upload-file label span i{
+	color: #76787c;
+}
+.upload-file label{
+    position: absolute!important;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 2;
+    margin-bottom:0!important;
+    padding-right:0!important;
+}
+.form-block {
+    border-bottom: 2px solid #e1e1e1;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 12px;
+    padding-top: 21px;
+}
+.myaccount-content.create-a-job-content .myaccount-content-cntlr {
+    padding-left: 0;
+    padding-right: 0;
+}
+.form-block .input-field-wrapper {
+    max-width: 100%;
+}
+.create-a-job-content .myaccount-content-cntlr{
+	padding-top:10px;
+}
+
+.create-a-job-form .input-field-col ul li span {
+    background: #e5e5e5;
+    font-size: 19px;
+    padding: 7px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #616368;
+    font-weight: 600;
+}
+
+.create-a-job-form .input-field-col ul {
+    display: flex;
+    margin: 0 -3px;
+}
+
+.create-a-job-form .input-field-col ul li {
+    padding: 0 3px;
+}
+.padding-btm-20{
+	padding-bottom:20px;
+}
+.create-a-job-form .back-btn a {
+    font-size: 15px;
+    color: #76787c;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+.create-a-job-form .back-btn a:hover{
+    color: #fa5252;
+}
+.create-a-job-form .input-field-inner{
+	display: flex;
+	align-items: center;
+}
+.create-a-job-form .input-field-inner .submint-btn{
+	margin-left: auto;
+}
+.form-block.form-block-bdrnone{
+    border-bottom:none;
+    padding-top:35px;
+    padding-bottom:10px
+}
+.create-a-job-form .input-field-inner .back-btn+.submint-btn button{
+    margin-bottom:0;
+}
+body .select2-selection--multiple textarea {
+    height: auto!important;
+    min-height: auto!important;
+    display: inline-block;
+    margin-top: 16px!important;
+    margin-left: 3px!important;
+    font-family: 'Inter', sans-serif!important;
+    transition: initial;
+}
+body .select2-selection--multiple ul li:before{
+    display: none;
+}
+body .select2-selection--multiple ul li span{
+
+}
+body .create-a-job-form .input-field-col .select2-selection--multiple ul li span{
+    background: transparent;
+    font-size: 16px;
+    padding: 0px;
+    padding-left: 2px;
+    padding-right: 5px;
+    display: inline-block;
+    border-radius: initial;
+    color: #616368;
+    font-weight: 600;
+    transition: initial;
+}
+body .create-a-job-form .input-field-col .select2-selection--multiple .select2-selection__choice__remove span{
+    padding: 0!important;
+    transition: initial;
+}
+body .create-a-job-form .input-field-col span.select2-selection.select2-selection--multiple {
+    border: 2px solid #cecece;
+    min-height: 60px;
+    padding-left: 13px;
+    padding-right: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: initial;
+}
+body .create-a-job-form .input-field-col ul.select2-selection__rendered{
+    margin: 0;
+    vertical-align: top;
+    transition: initial;
+}
+
+body .select2-selection--multiple textarea::placeholder{
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 1!important;    
+    transition: initial;
+}
+#tags .create-a-job-form .select2-container{
+    min-height: 60px!important;
+    height: auto!important;
+    transition: initial;
+}
+.bootstrap-tagsinput {
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bootstrap-tagsinput input{
+    order: 1;
+}
+.bootstrap-tagsinput .tag {
+    background: #e5e5e5;
+    font-size: 16px;
+    padding: 6px 8px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #616368;
+    font-weight: 600;
+    order: 2;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.bootstrap-tagsinput input:focus{
+    border: 2px solid #2b2b2b;
+    border-color: #2b2b2b;
+}
+.input-field-col textarea.textbox{
+    min-height: 58px!important;
+    resize: vertical;
+}
+.flexible-input,
+.flexible-textarea{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-height: 58px;
+    background: #fff;
+    border: 2px solid #cecece;
+    box-sizing: border-box;
+    padding: 15px 20px 15px 16px;
+    padding-right: 20px;
+    color: #2b2b2b;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 500;
+    word-wrap: break-word;
+    border-radius: 6px!important;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    font-family: 'Inter', sans-serif;
+}
+.flexible-input span,
+.flexible-textarea span{
+    font-size: 19px!important;
+    line-height: 24px!important;
+    font-weight: 500!important; 
+    color: #2b2b2b!important;   
+    font-family: 'Inter', sans-serif;
+}
+.flexible-input:focus,
+.flexible-textarea:focus{
+    border-color: #2b2b2b;
+}
+.flexible-input:empty:before,
+.flexible-textarea:empty:before{
+    content: attr(placeholder);
+    cursor: text;
+}
+.flexible-input.has-value:before,
+.flexible-textarea.has-value:before{
+    display: none;
+}
+.flexible-input-val,
+.flexible-textarea-val{
+    display: none;
+}
+.has-flexible-textarea .flexible-textarea{
+    min-height: 189px;
+}
+.has-flexible-textarea.has-upload .flexible-textarea{
+    padding-right: 30px;
+}
+@media(max-width:1199px){
+    .create-a-job-form .input-field-col label, 
+    .pro-review-job .input-field-col > span{
+        font-size:21px;
+    }
+    .create-a-job-form .input-field-col ul li span{
+        font-size:17px;
+    }
+    .create-a-job-form .form-block {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    body .create-a-job-form .input-field-col span.select2-selection.select2-selection--multiple{
+        min-height: 55px;
+    }
+    .input-field-col textarea.textbox{
+        min-height: 55px!important;
+    }
+    body .select2-selection--multiple textarea{
+        margin-top: 14px!important;
+    }
+    .flexible-input,
+    .flexible-input span,
+    .flexible-textarea,
+    .flexible-textarea span{
+        font-size: 18px!important;
+        line-height: 23px!important;        
+    }
+    .flexible-input{
+        min-height: 55px;
+        padding: 13px 20px 12px 16px;
+    }
+    .create-a-job-form .input-field-col input, 
+    .create-a-job-form .input-field-col textarea {
+        padding: 12px 20px 12px 16px;
+    }
+    .flexible-textarea{
+        padding: 12px 20px 12px 16px;
+    }
+    .has-flexible-textarea.has-upload .flexible-textarea {
+        padding-right: 30px;
+    }
+    .has-flexible-textarea .flexible-textarea {
+        min-height: 170px;
+    }
+}
+@media(max-width:991px){
+    .form-block {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media(max-width:767px){
+    .create-a-job-form .input-field-col label, .pro-review-job .input-field-col > span{
+        font-size:18px;
+        padding-right:30px;
+    }
+    .create-a-job-form .input-field-col ul li span{
+        font-size:16px;
+    }
+    .form-block.form-block-bdrnone .input-field-inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-block.form-block-bdrnone .input-field-inner .submint-btn {
+        margin-left: initial;
+    }
+
+    .form-block.form-block-bdrnone .input-field-inner .back-btn {
+        margin-bottom: 25px;
+    }
+    .form-block.form-block-bdrnone{
+        padding-top:26px;
+    }
+    .create-a-job-form .form-block {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    body .create-a-job-form .input-field-col span.select2-selection.select2-selection--multiple,
+    #tags .create-a-job-form .select2-container{
+        min-height: 50px;
+    }
+    .input-field-col textarea.textbox{
+        min-height: 50px!important;
+    }
+    body .select2-selection--multiple textarea{
+        margin-top: 13px!important;
+    }
+    body .create-a-job-form .input-field-col span.select2-selection.select2-selection--multiple{
+        padding-bottom: 0;
+    }
+    .select2-container--default .select2-selection--multiple .select2-selection__choice{
+        margin-top: 0!important;
+        margin-bottom: 3px!important;
+    }
+    .flexible-input,
+    .flexible-input span,
+    .flexible-textarea,
+    .flexible-textarea span{
+        font-size: 16px!important;
+        line-height: 23px!important;        
+    }
+    .create-a-job-form .input-field-col input, .create-a-job-form .input-field-col textarea {
+        padding: 11px 20px 11px 16px;
+    }
+    .flexible-input{
+        min-height: 50px;
+        padding: 11px 20px 11px 16px;
+    }
+    .flexible-textarea{
+        padding: 11px 20px 11px 16px;
+    }
+    .has-flexible-textarea.has-upload .flexible-textarea {
+        padding-right: 30px;
+    }
+    .has-flexible-textarea .flexible-textarea {
+        min-height: 150px;
+    }
+
+}
+@media(max-width:639px){
+    .create-a-job-form .form-block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .caj .myaccount-navigation .myaccount-menu{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    .form-block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flexible-input,
+    .flexible-input span,
+    .flexible-textarea,
+    .flexible-textarea span{
+        font-size: 16px!important;
+        line-height: 22px!important;        
+    }
+}

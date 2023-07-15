@@ -1,0 +1,213 @@
+.pro-rvw-job-contant-cntlr,
+.pro-rvw-job-aply-contant-cntlr{
+    padding-right: 35px;
+}
+.pro-rvw-job-aply-form .form-block {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+.pro-rvw-job-aply-form .input-field-col textarea, 
+.pro-rvw-job-aply-form .input-field-col input{
+    padding: 15px 20px 15px 17px;
+}
+.pro-rvw-job-aply-form .input-field-col textarea{
+    height: 110px!important;
+}
+.pro-rvw-job-aply-form .create-a-job-form span.select2.select2-container.select2-container--default {
+    width: 522px!important;
+}
+.pro-rvw-job-aply-form .create-a-job-form select.select-2-cntlr.select2-hidden-accessible.xontact-custom-select {
+    width: 522px!important;
+}
+.pro-rvw-job-aply-form .create-a-job-form .select2-container .select2-selection--single{
+    height: 60px!important;
+}
+#quote-price .input-field-col input,
+.pro-rvw-job-aply-form input#dates{
+    width: 522px;
+}
+.pro-rvw-job-aply-form label{
+    display: block;
+}
+.pro-rvw-job-aply-form-btn-cntlr {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+.pro-rvw-job-aply-form-btn-cntlr button{
+    padding: 14px 13px 15px;
+    cursor: pointer;
+}
+.pro-rvw-job-aply-form-cntlr {
+    border-bottom: 18px solid #7a92d0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 27%);
+    -moz-box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 27%);
+    -webkit-box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 27%);
+}
+.pro-review-job-apply-sec {
+    padding-top: 50px;
+    padding-bottom: 61px;
+}
+.pro-rvw-job-aply-mdul-cntlr .job-cntnt-item-rgt {
+    margin-left: initial;
+}
+.pro-rvw-job-aply-lft .profile-ctlr{
+    margin-left: 0;
+    margin-right: 10px;
+    padding-bottom: 15px;
+}
+.job-cntnt-item-des > span{
+    color: #252525;
+    font-weight: 500;
+}
+.job-cntnt-item-des p{
+    color: #616368;
+    margin-bottom: 22px;
+    line-height: 1.25;
+}
+.pro-rvw-job-aply-fature ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+.pro-rvw-job-aply-fature ul li{
+    padding: 0 12px;
+}
+.pro-rvw-job-fature-item span.property{
+    color: #252525;
+    font-weight: 500;
+}
+.pro-rvw-job-fature-item span.value{
+    color: #616368;
+}
+.pro-rvw-job-aply-fature {
+    margin-bottom: 15px;
+}
+.pro-rvw-job-aply-mdul-cntlr {
+    padding-bottom: 38px;
+}
+.pro-rvw-job-aply-mdul-cntlr .job-cntnt-item-dtls-col span i{
+    color: #fa5252;
+    margin-top: -1px;
+}
+.pro-rvw-job-aply-mdul-cntlr .job-cntnt-item-dtls-col span i.fas.fa-user{
+    margin-top: -2px;
+}
+.job-cntnt-item-dtls-col-pl18 span{
+    padding-left: 18px!important;
+}
+.pro-review-job-apply-sec .job-cntnt-mdul-hdr{
+    margin-bottom: 20px;
+}
+.pro-rvw-job-aply-mdul-cntlr .job-cntnt-item{
+    flex-wrap: nowrap;
+}
+@media(max-width: 1199px){
+    .pro-rvw-job-aply-form .create-a-job-form .select2-container .select2-selection--single{
+        height: 55px!important;
+    }
+    .pro-rvw-job-aply-form .input-field-col textarea {
+        height: 100px!important;
+    }
+    .pro-rvw-job-contant-cntlr,
+    .pro-rvw-job-aply-contant-cntlr{
+        padding-right: 25px;
+    }
+}
+@media(max-width: 991px){
+    .pro-rvw-job-aply-form .form-block {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 9px;
+    }
+    .pro-rvw-job-aply-form .input-field-col textarea {
+        height: 90px!important;
+    }
+    .pro-rvw-job-aply-fature {
+        margin-bottom: 5px;
+    }
+    .job-cntnt-item-des p{
+        margin-bottom: 17px;
+    }
+    .job-cntnt-item-des p br{
+        display: none;
+    }
+    .pro-rvw-job-contant-cntlr,
+    .pro-rvw-job-aply-contant-cntlr{
+        padding-right: 15px;
+    }
+}
+@media(max-width: 767px){
+    .pro-rvw-job-aply-form .create-a-job-form span.select2.select2-container.select2-container--default {
+        width: 100%!important;
+    }
+    .pro-rvw-job-aply-form .create-a-job-form select.select-2-cntlr.select2-hidden-accessible.xontact-custom-select {
+        width: 100%!important;
+    }
+    #quote-price .input-field-col input,
+    .pro-rvw-job-aply-form input#dates{
+        width: 100%;
+    }
+    .pro-rvw-job-aply-form .create-a-job-form .select2-container .select2-selection--single{
+        height: 50px!important;
+    }
+    .pro-rvw-job-aply-fature {
+        margin-bottom: 0;
+    }
+    .pro-rvw-job-aply-form .form-block {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .pro-rvw-job-aply-mdul-cntlr {
+        padding-bottom: 30px;
+    }
+    .pro-rvw-job-aply-fature ul li{
+        padding-bottom: 6px;
+    }
+    .pro-review-job-apply-sec {
+        padding-bottom: 50px;
+    }
+    .pro-rvw-job-contant-cntlr,
+    .pro-rvw-job-aply-contant-cntlr{
+        padding-right: 0;
+    }
+}
+@media(max-width: 575px){
+    .pro-rvw-job-aply-mdul-cntlr .job-cntnt-item{
+        flex-wrap: wrap;
+    }
+    .pro-rvw-job-aply-mdul-cntlr .job-cntnt-item-title{
+        padding-right: 0px;
+    }
+}
+@media(max-width: 479px){
+    .pro-rvw-job-aply-form .input-field-col textarea, 
+    .pro-rvw-job-aply-form .input-field-col input {
+        padding: 12px 15px 12px 15px;
+    }
+    .pro-rvw-job-aply-form .form-block {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .pro-rvw-job-aply-form-btn-cntlr button {
+        padding: 13px 13px 14px;
+    }
+    .job-cntnt-mdul-hdr > span{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .proposal-job-cntnt-mdul .job-cntnt-item-details ul li,
+    .pro-rvw-job-mdul-cntlr .job-cntnt-item-details ul li,
+    .pro-rvw-job-aply-mdul-cntlr .job-cntnt-item-details ul li{
+        width: initial;
+    }
+}
+@media(max-width: 479px){
+    .pro-rvw-job-aply-form-btn-cntlr button {
+        padding: 12px 13px 13px;
+    }
+}
