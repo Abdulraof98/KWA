@@ -47,28 +47,28 @@
 						<div class="news-text-box">
 							<h3 class="english"><a href="{{route('single_project',['id'=>$pro->id])}}">{{$pro->title_en}}</a></h3>
 							<h3 class="persian"><a href="{{route('single_project',['id'=>$pro->id])}}">{{$pro->title_dr}}</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
-							</p>
+							<!--<p class="blog-meta">-->
+							<!--	<span class="author"><i class="fas fa-user"></i> Admin</span>-->
+							<!--	<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>-->
+							<!--</p>-->
 							@php
 								if(app()->getLocale()=='en'){
 									$getlength = strlen($pro->description_en);
 									$maxLength = 500;
 									if ($getlength > $maxLength) { 
-									echo substr($pro->description_en, 0, strpos($pro->description_en, ' ', $maxLength));
+									echo strip_tags(substr($pro->description_en, 0, strpos($pro->description_en, ' ', $maxLength)));
 									echo "...";      
 									} else {
-										echo $pro->description_en;
+										echo strip_tags($pro->description_en);
 									}
 								}else{
 									$getlength = strlen($pro->description_dr);
 									$maxLength = 500;
 									if ($getlength > $maxLength) { 
-									echo substr($pro->description_dr, 0, strpos($pro->description_dr, ' ', $maxLength));
+									echo strip_tags(substr($pro->description_dr, 0, strpos($pro->description_dr, ' ', $maxLength)));
 									echo "...";    
 									} else {
-										echo $pro->description_dr;
+										echo strip_tags($pro->description_dr);
 									}
 								}
 							@endphp

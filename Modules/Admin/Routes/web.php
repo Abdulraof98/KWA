@@ -51,6 +51,15 @@ Route::prefix('admin')->group(function() {
         Route::post('admin-updateevent/{id}',['uses'=>'EventController@update','as'=>'admin-updateevent']);
         Route::get('admin-viewevent/{id}',['uses'=>'EventController@view','as'=>'admin-viewevent']);
 
+        Route::get('admin-story',['uses'=>'StoryController@index','as'=>'admin-story']);
+        Route::get('admin-story-list-datatable',['uses'=>'StoryController@story_list','as'=>"admin-story-list-datatable"]);
+        Route::get('admin-addstory',['uses'=>'StoryController@add','as'=>'admin-addstory']);
+        Route::post('admin-storypost',['uses'=>'StoryController@post_add','as'=>'admin-storypost']);
+        Route::get('admin-deletestory',['uses'=>'StoryController@delete_story','as'=>'admin-deletestory']);
+        Route::get('admin-editstory/{id}',['uses'=>'StoryController@edit','as'=>'admin-editstory']);
+        Route::post('admin-updatestory/{id}',['uses'=>'StoryController@update','as'=>'admin-updatestory']);
+        Route::get('admin-viewstory/{id}',['uses'=>'StoryController@view','as'=>'admin-viewstory']);
+
         Route::get('admin-inquiry',['uses' =>'InquiryController@index', 'as'=> 'admin-inquiry']);
         Route::get('admin-inquiry-list-datatable',['uses'=>'InquiryController@inquiry_list','as'=>"admin-inquiry-list-datatable"]);
         Route::get('admin-editinquiry/{id}',['uses' =>'InquiryController@edit', 'as'=> 'admin-editinquiry']);

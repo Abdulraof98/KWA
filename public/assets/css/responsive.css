@@ -11,13 +11,13 @@
 		top: 50px;
 	}
 	.site-logo .color-white{
-		color: #e5c58d;
+		color: #ffffff;
 		font-family: Georgia, serif;
 		margin-top: 17px;
 		/* margin-left: 90px; */
 	  }
 }
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 750px){
 	img.company_logo{
 		width: 300px;
 		position: absolute;
@@ -25,10 +25,9 @@
 		margin-top: 12px;
 	  }
 	  .site-logo .color-white{
-		color: #e5c58d;
+		color: #ffffff;
 		font-family: Georgia, serif;
 		margin-top: 17px;
-		margin-left: 90px;
 	  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 

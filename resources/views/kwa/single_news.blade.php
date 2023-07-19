@@ -21,28 +21,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="single-article-section">
-					@if(app()->getLocale()=='en')
-							<h2 style="color:#239cd2;">{{$model->title_en}}</h2>
+				<div class="single-article-section dd da">
+							
+                            @if(app()->getLocale()=='en')
+							<h2>{{$model->title_en}}</h2>
                         @else
                         <h2>{{$model->title_dr}}</h2>
                         @endif
-						<div class="single-article-text" >
-						<div class=" col-lg-8 responsive_image" >
-						<img src="{{URL::asset('public/uploads/admin/event/'.$model->image)}}" 
-						 alt="">
-					</div>
-					
-							<!-- <p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2022</span>
-							</p> -->
-							<br>
-							@if(app()->getLocale()=='en')
-						{!! $model->description_en !!}	
-                        @else
-						{!! $model->description_dr !!}	
-                        @endif
+                      
+                        <div class="single-article-text" >
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> {{ optional($model->user)->name ?? 'Admin' }} </span>
+                                <span class="date"><i class="fas fa-calendar"></i>    
+                                {{ \Carbon\Carbon::parse($model->created_at)->format('d F, Y') }}</span>
+                            
+                            </p><br><hr>
+                                <img src="{{URL::asset('public/uploads/admin/event/'.$model->image)}}"  alt="">
+                                <hr>
+                                @if(app()->getLocale()=='en')
+                            {!! $model->description_en !!}	
+                            @else
+                            {!! $model->description_dr !!}	
+                            @endif
 						</div>
 					</div>
 				</div>

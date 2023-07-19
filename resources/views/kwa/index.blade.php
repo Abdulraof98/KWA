@@ -65,6 +65,61 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-title">	
+						<h3 class="english"><span class="orange-text">Our</span> Stories</h3>
+						<h3 class="persian"><span class="orange-text">داستان</span> های ما</h3>
+						<!-- <p class="english"> The recent events which we hold in our association </p>
+						<p class="persian">رویدادهای اخیری که در انجمن خود برگزار می کنیم</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				@foreach($stories as $ev)
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="{{route('single_story',['id'=>$ev->id])}}"><div class="latest-news-bg news-bg-1"
+						style=" background-image:url({{URL::asset('public/uploads/admin/story/'.$ev->image)}})"></div></a>
+						<div class="news-text-box">
+							@if(app()->getLocale()=='en')
+							<h3><a href="{{route('single_story',['id'=>$ev->id])}}">{{$ev->title_en}}</a></h3>
+							@else
+							<h3><a href="{{route('single_story',['id'=>$ev->id])}}">{{$ev->title_dr}}</a></h3>
+							@endif
+							@php
+								if(app()->getLocale()=='en'){
+									$getlength = strlen($ev->description_en);
+									$maxLength = 500;
+									if ($getlength > $maxLength) { 
+									echo substr($ev->description_en, 0, strpos($ev->description_en, ' ', $maxLength));
+									echo "...";      
+									} else {
+										echo $ev->description_en;
+									}
+								}else{
+									$getlength = strlen($ev->description_dr);
+									$maxLength = 500;
+									if ($getlength > $maxLength) { 
+									echo substr($ev->description_dr, 0, strpos($ev->description_dr, ' ', $maxLength));
+									echo "...";    
+									} else {
+										echo $ev->description_dr;
+									}
+								}
+							@endphp
+							<!-- {!! $ev->description_en !!} -->
+							<a href="{{route('single_story',['id'=>$ev->id])}}" class="read-more-btn">{{__('header.read more')}} <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				@endforeach
+            </div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a href="{{route('stories')}}" class="boxed-btn">{{__('header.Load More')}}</a>
+				</div>
+			</div>
+			<div class="row  mt-80">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">	
 						<h3 class="english"><span class="orange-text">Our</span> Events</h3>
 						<h3 class="persian"><span class="orange-text">مناسبت</span> های ما</h3>
 						<p class="english"> The recent events which we hold in our association </p>
@@ -72,7 +127,7 @@
 					</div>
 				</div>
 			</div>
-
+			
 			<div class="row">
 				@foreach($events as $ev)
 				<div class="col-lg-4 col-md-6">

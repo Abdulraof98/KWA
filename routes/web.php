@@ -45,9 +45,15 @@ Route::middleware(['web'])->group(function () {
     // Route::get('/', ['uses' => 'KwaController@home', 'as' => '/']);
     
     Route::get('kwa_news','KwaController@news')->name('kwa_news');
-    Route::get('kwa_about','KwaController@about')->name('kwa_about');
+Route::get('kwa_about','KwaController@about')->name('kwa_about');
     Route::get('kwa_events','KwaController@events')->name('kwa_events');
     Route::get('kwa_projects','KwaController@projects')->name('kwa_projects');
+
+    Route::get('stories','KwaController@stories')->name('stories');
+    Route::get('single_story/{id?}','KwaController@single_story')->name('single_story');
+    // Route::get('kwa_projects','KwaController@projects')->name('kwa_projects');
+    // Route::get('kwa_projects','KwaController@projects')->name('kwa_projects');
+
     Route::get('single_project/{id?}','KwaController@single_project')->name('single_project');
     Route::get('kwa_contact','KwaController@contact')->name('kwa_contact');
     Route::post('add-contact','KwaController@add_contact')->name('add-contact');

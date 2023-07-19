@@ -33,9 +33,10 @@
 								</li>
 								<li class="{{ (in_array(Route::currentRouteName(), ['kwa_projects','single_project'])) ? 'active' : '' }}"><a href="{{route('kwa_projects')}}">{{__('header.Projects')}}</a></li>
 								<li class="{{ (in_array(Route::currentRouteName(), ['kwa_events','single_event'])) ? 'active' : '' }}"><a href="{{route('kwa_events')}}">{{__('header.Events')}}</a></li>
+								<li class="{{ (in_array(Route::currentRouteName(), ['story','stories'])) ? 'active' : '' }}"><a href="{{route('stories')}}">{{__('header.Our Stories')}}</a></li>
 								<li class="{{ (in_array(Route::currentRouteName(), ['kwa_contact'])) ? 'active' : '' }}"><a href="{{route('kwa_contact')}}">{{__('header.Contact')}}</a></li>
-								<li class="{{ (in_array(Route::currentRouteName(), ['kwa_gallery'])) ? 'active' : '' }}"><a href="{{route('kwa_gallery')}}">{{__('header.Photo Gallery')}}</a></li>
-								<li class="{{ (in_array(Route::currentRouteName(), ['kwa_about'])) ? 'active' : '' }}" ><a href="{{route('kwa_about')}}">{{__('header.About')}}</a></li>
+								<li class="{{ (in_array(Route::currentRouteName(), ['kwa_gallery'])) ? 'active' : '' }}"><a href="{{route('kwa_gallery')}}">{{__('header.Gallery')}}</a></li>
+								<li class="{{ (in_array(Route::currentRouteName(), ['kwa_about'])) ? 'active' : '' }}" ><a href="{{route('kwa_about')}}">{{__('header.About Us')}}</a></li>
 								<!-- <li class="{{ (Request::route()->getName() == 'kwa_news') ? 'active': ''}}"><a href="{{route('kwa_news')}}">{{__('header.Blogs')}}</a></li> -->
 		
 								<li ><a href="#">{{__('header.Languages')}}</a>
@@ -45,7 +46,7 @@
 									</ul>
 								</li>
 								<li class="main_menu_right">
-								<a href="#" data-toggle="modal" data-target="#loginModal" class="bordered-btn register-btn " >{{__('header.Register')}}</a>
+								<a href="#" data-toggle="modal" data-target="#loginModal" class="bordered-btn register-btn bg-success " >{{__('header.Register')}}</a>
 								</li>
 								<li class="main_menu_right" id="donate-button-container" style="margin-top: 4px;" >
 								<!-- <a  id="donate-click" class="donate-btn header-icons" >Donate</a> -->

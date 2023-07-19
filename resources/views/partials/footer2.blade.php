@@ -7,17 +7,15 @@
 					<div class="footer-box about-widget">
 						<h2 class="widget-title english">About us</h2>
 						<h2 class="widget-title persian">در باره ما</h2>
-
-					<!-- <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p> -->
-					@php
-                  $footer= \App\Models\Cms::where('slug', 'like', '%logo_content*%')->first();
-                @endphp
-                @if(app()->getLocale()=='en')
-                {!! $footer->content_body_en !!}
-                @elseif(app()->getLocale()=='dr')
-                {!! $footer->content_body_dr !!}
-                @endif
-				</div>
+						@php
+						$footer= \App\Models\Cms::where('slug', 'like', '%logo_content*%')->first();
+						@endphp
+						@if(app()->getLocale()=='en')
+						{!! $footer->content_body_en !!}
+						@elseif(app()->getLocale()=='dr')
+						{!! $footer->content_body_dr !!}
+						@endif
+					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box get-in-touch">
@@ -37,6 +35,7 @@
 						<ul>
 							<li><a href="{{route('kwa_home')}}">{{__('header.Home')}}</a></li>
 							<li><a href="{{route('kwa_projects')}}">{{__('header.Projects')}}</a></li>
+							<li><a href="{{route('stories')}}">{{__('header.Our Stories')}}</a></li>
 							<li><a href="{{route('kwa_events')}}">{{__('header.Events')}}</a></li>
 							<li><a href="{{route('kwa_events')}}">{{__('header.Contact')}}</a></li>
 						</ul>
@@ -79,10 +78,11 @@
 					<div class="social-icons">
 						<ul>
 							<li><a href="https://www.facebook.com/KabulWAA/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+							<!-- <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+							<li><a href="https://www.instagram.com/kabulwashingtonassociation/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/kabulwashington-association-136b97283/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="https://youtube.com/@KabulWashingtonAssociation" target="_blank"><i class="fab fa-youtube"></i></a></li>
+							<!-- <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li> -->
 						</ul>
 					</div>
 				</div>

@@ -43,12 +43,11 @@
 					<div class="featured-text">
 						<!-- <h2 class="pb-3 english">Why <span class="orange-text">Us</span></h2> -->
 						@foreach($aboutus as $abt)
-						@if(app()->getLocale()=='en')
+						{{-- @if(app()->getLocale()=='en')
 						<h2 class="pb-3 text-center">{{$abt->title_en}}</h2>
 						@else
 						<h2 class="pb-3 text-center">{{$abt->title_dr}}</h2>
-						@endif
-						<hr>
+						@endif --}}
 						<div class="row">
 							<div class="col-lg-12 col-md-12 mb-4 mb-md-5">
 								<div class="list-box d-flex">

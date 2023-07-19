@@ -16,6 +16,7 @@ use App\Models\Subscriber;
 use App\Models\Inquiry;
 use App\Models\ContactUs;
 use App\Models\Image;
+use App\Models\Story;
 
 class KwaController extends Controller
 {
@@ -28,11 +29,12 @@ class KwaController extends Controller
     public function  home(){
 
         $data=[];
-        $data['slide']    = Event::where('status','1')->take(3)->get();
-        // dd($data['slide']);
+        // $data['slide']    = Event::where('status','1')->take(3)->get();
+        $data['slide']    = Slide::where('status','1')->get();
         $data['aboutus']  = Cms::where('slug', 'like', '%about_us*%')->first();
         $data['events']   = Event::where('status','1')->orderBy('id', 'desc')->take(3)->get();
         $data['projects'] = Project::where('status','1')->orderBy('id', 'desc')->take(3)->get();
+        $data['stories'] = Story::where('status','1')->orderBy('id', 'desc')->take(3)->get();
 
         return view('kwa.index',$data);
     }
@@ -48,6 +50,21 @@ class KwaController extends Controller
         $data['events']=Event::where('status','1')->get();
         return view('kwa.events',$data);
     }
+
+    public function stories(){
+        $data = [];
+        $data['stories']=Story::where('status','1')->get();
+
+        return view('story.stories',$data);
+    }
+
+    public function single_story($id){
+        $data=[];
+        // dd(Auth::guard('backend')->user()->id);
+        $data['model']=Story::find($id);
+        return view('story.single_story',$data);
+    }
+
     public function projects(){
         $data=[];
         $data['projects']=Project::where('status','1')->get();
@@ -99,6 +116,7 @@ class KwaController extends Controller
     }
     public function single_event($id=null){
         $data=[];
+        
         $data['model']=Event::find($id);
         return view('kwa.single_news',$data);
     }

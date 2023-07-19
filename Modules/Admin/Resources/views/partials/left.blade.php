@@ -7,7 +7,7 @@
             <span class="arrow open"></span>
         </a>
     </li>
-
+    @if(auth()->guard('backend')->user()->type_id != 3)
     <li class="nav-item {{ (in_array(Route::currentRouteName(), ['create_user','admin-manage-users'])) ? 'active' : '' }}">
         <a href="{{route('admin-manage-users')}}" class="nav-link nav-toggle">
             <i class="fa fa-users"></i>
@@ -30,7 +30,7 @@
             </li>
         </ul>
     </li>
-
+    @endif
     <li class="nav-item {{ (in_array(Route::currentRouteName(), ['list-subscribers','admin-subscriber'])) ? 'active' : '' }}">
         <a href="{{route('admin-subscriber')}}" class="nav-link nav-toggle">
             <i class="fa fa-users"></i>
@@ -46,20 +46,27 @@
             <span class="selected"></span>
             <span class="arrow"></span>
         </a>
-       
     </li>
-    <!-- <li class="nav-item {{ (in_array(Route::currentRouteName(), ['admin-slide','aeditslider'])) ? 'active' : '' }}" >
-        <a href="{{ Route('admin-slide') }}" class="nav-link nav-toggle" style=" pointer-events: none">
+    <li class="nav-item {{ (in_array(Route::currentRouteName(), ['admin-slide','aeditslider','admin-addslide'])) ? 'active' : '' }}" >
+        <a href="{{ Route('admin-slide') }}" class="nav-link nav-toggle" >
             <i class="fa fa-photo"></i>
             <span class="title">Slides</span>
             <span class="selected"></span>
             <span class="arrow"></span>
         </a>
-    </li> -->
+    </li>
     <li class="nav-item {{ (in_array(Route::currentRouteName(), ['admin-event','admin-addevent','admin-editevent','admin-viewevent','admin-subcategory','admin-updatesubcategory'])) ? 'active' : '' }}">
         <a href="{{ Route('admin-event') }}" class="nav-link nav-toggle">
             <i class="fa fa-photo"></i>
             <span class="title">Events</span>
+            <span class="selected"></span>
+            <span class="arrow"></span>
+        </a>
+    </li>
+    <li class="nav-item {{ (in_array(Route::currentRouteName(), ['admin-story','admin-addstory','admin-editstory','admin-viewstory','admin-subcategory','admin-updatesubcategory'])) ? 'active' : '' }}">
+        <a href="{{ Route('admin-story') }}" class="nav-link nav-toggle">
+            <i class="fa fa-photo"></i>
+            <span class="title">Stories</span>
             <span class="selected"></span>
             <span class="arrow"></span>
         </a>

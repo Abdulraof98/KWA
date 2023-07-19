@@ -1,7 +1,7 @@
 @extends('admin::layouts.main')
 
 @section('breadcrumb')
-<li> <a href="{{ Route('admin-slide') }}">Slide</a></li>
+<li> <a href="{{ Route('admin-story') }}">Story</a></li>
 <li class="active">Edit</li>
 @stop
 
@@ -15,34 +15,30 @@
             </div>
         </div>
         <div class="portlet-body form">
-            <form class="form-horizontal form-row-seperated" action="{{ Route('admin-updateslide', ['id' => $model->id]) }}" method="POST" enctype="multipart/form-data">
+            <form class="form-horizontal form-row-seperated" action="{{ Route('admin-updatestory', ['id' => $model->id]) }}" method="POST" enctype="multipart/form-data">
                 @csrf
-                
-                <div class="form-body">
-                 
-                    <div class="form-group {{ $errors->has('title_en') ? ' has-error' : '' }}">
-                        <label class="col-md-3 control-label">Title</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" name="title_en" value="{{ (old('title_en') != "") ? old('title_en') : $model->title_en }}" placeholder="title English">
+                    <div class=" row">
+                        <label class=" col-lg-2  control-label">Story title English </label>
+                        <div class="col-lg-3">
+                            <input type="text" class="form-control" name="title_en" value="{{ (old('title_en') != "") ? old('title_en') : $model->title_en }}" placeholder="Story title in English">
                                    @if ($errors->has('title_en'))
                                    <div class="help-block">{{ $errors->first('title_en') }}</div>
-                            @endif
+                                    @endif
                         </div>
-                    </div>
-                    {{--
-                    <div class="form-group {{ $errors->has('title_dr') ? ' has-error' : '' }}">
-                        <label class="col-md-3 control-label"> Title Persian <span class="required">*</span></label>
-                        <div class="col-md-8" style="direction:rtl;">
-                            <input type="text" class="form-control" name="title_dr" value="{{ (old('title_dr') != "") ? old('title_dr') : $model->title_dr }}" placeholder="title Persian">
+                        <label class=" col-lg-2 control-label">Story title Persian </label>
+                        <div class="col-lg-3">
+                            <input type="text" class="form-control" name="title_dr" value="{{ (old('title_dr') != "") ? old('title_dr') : $model->title_dr }}" placeholder="Story title in Persian">
                                    @if ($errors->has('title_dr'))
                                    <div class="help-block">{{ $errors->first('title_dr') }}</div>
-                            @endif
+                                    @endif
                         </div>
-                    </div> 
-                    --}}
-                    <div class="form-group {{ $errors->has('image') ? ' has-error' : '' }}">
-                        <label class="col-md-3 control-label">Change Picture <span class="required">*</span></label>
-                        <div class="col-md-4">
+                    </div>
+                    <br>
+                  
+                    <br>
+                    <div class="row {{ $errors->has('image') ? ' has-error' : '' }}">
+                        <label class="col-md-2 control-label">Change Picture </label>
+                        <div class="col-md-3">
                             <input type="file" class="form-control" name="image" >
                                    @if ($errors->has('image'))
                                    <div class="help-block">{{ $errors->first('image') }}</div>
@@ -50,7 +46,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                <img src="{{ ($model->image != '') ? URL::asset('public/uploads/admin/slide/' . $model->image) : URL::asset('public/backend/assets/pages/img/admin-default.jpg') }}" alt="" style="width: 200px; height: 150px;"> 
+                                <img src="{{ ($model->image != '') ? URL::asset('public/uploads/admin/story/' . $model->image) : URL::asset('public/backend/assets/pages/img/admin-default.jpg') }}" alt="" style="width: 200px; height: 150px;"> 
                             </div>
                         </div>
                     </div>
@@ -95,7 +91,7 @@
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6">
                             <button type="submit" class="btn green">Update</button>
-                            <a href="{{ Route('admin-slide') }}" class="btn default">Back</a>
+                            <a href="{{ Route('admin-story') }}" class="btn default">Back</a>
                         </div>
                     </div>
                 </div>

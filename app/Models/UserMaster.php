@@ -21,6 +21,9 @@ class UserMaster extends Model implements Authenticatable {
     // public function getId(){
     //     return $this->select('id')->first();
     // }
+    public function user(){
+        return $this->hasMany(Story::class,'created_by');
+    }
 
 
 }

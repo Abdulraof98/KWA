@@ -1,7 +1,7 @@
 
 
 .hero-bg {
-    background-image: url("../img/latest-news/back_ground.jpg");
+    /* background-image: url("../img/latest-news/back_ground.jpg"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -72,7 +72,16 @@
  .responsive_image > img{
   width: 100%;
    height: auto !important;
-   border-radius: 10px;
+   /* border-radius: 10px; */
+}
+.dd {
+  max-width: 680px;
+}
+.da {
+  margin: 0 24px;
+}
+.ok {
+  font-size: 20px;
 }
   /* @media only screen and (max-width: 500px){
     .responsive_image{
@@ -89,11 +98,12 @@
  
  }*/
  .breadcrumb-bg {
-  background-image: url("../img/company-logos/background.png") !important;
+  background-image: url("../img/company-logos/bg_linear.png") !important;
   height: inherit;
 }
 .breadcrumb-single-bg {
-  background-image: url("../img/company-logos/background.png") !important;
+  background-image: url("../img/company-logos/bg_linear.png") !important;
+  
   height: 30%;
 }
  .breadcrumb-section-single {
